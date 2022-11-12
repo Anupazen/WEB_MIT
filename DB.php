@@ -5,6 +5,6 @@
 		die("connection failed".$con->connect_error);
 	}
 	else{
-        echo "Connected";	
+        
 	}
 ?>
