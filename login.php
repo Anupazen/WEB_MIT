@@ -15,6 +15,12 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
 button {
   background-color: #04AA6D;
   color: white;
@@ -46,7 +52,17 @@ img.avatar {
 }
 
 .container {
-  padding: 100px;
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+
+}
+.container1{
+  padding-left:150px ;
+
+
+
+}
 }
 
 span.psw {
@@ -63,6 +79,9 @@ span.psw {
   .cancelbtn {
      width: 100%;
   }
+
+
+
 }
 </style>
 </head>
@@ -76,6 +95,9 @@ span.psw {
   </div>
 
   <div class="container">
+    <h1 align="center">Log In</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -88,8 +110,8 @@ span.psw {
     </label>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
+  <div class="container1" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>   
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
