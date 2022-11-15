@@ -2,8 +2,8 @@
 <html lan="en">
 <head>
 	<title>Yasiru Traders</title>
-  <link rel="stylesheet" href="slideshow.css">
-  <link rel="stylesheet" href="menubar.css">
+  <link rel="stylesheet" href="CSS/slideshow.css">
+  <link rel="stylesheet" href="CSS/menubar.css">
 <style>
 
 
@@ -19,23 +19,23 @@
   <li><a href="#about">Sign-up</a></li>
 	</ul><hr>
 
-	<img src="yasiru logo.jpg" style="width: 200px;height: 100px;">
+	<img src="Images/yasiru logo.jpg" style="width: 200px;height: 100px;">
 
   <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="img_nature_wide.jpg" style="width:100%">
+  <img src="Images/img_nature_wide.jpg" style="width:100%">
   <div class="text">Caption Text</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="img_snow_wide.jpg" style="width:100%">
+  <img src="Images/img_snow_wide.jpg" style="width:100%">
   <div class="text">Caption Two</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="img_mountains_wide.jpg" style="width:100%">
+  <img src="Images/img_mountains_wide.jpg" style="width:100%">
   <div class="text">Caption Three</div>
 </div>
 
