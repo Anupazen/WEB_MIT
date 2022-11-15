@@ -1,10 +1,16 @@
 <?php
-	$con=new mysqli("localhost","root","","webmit");
-	if($con->connect_error)
-	{
-		die("connection failed".$con->connect_error);
-	}
-	else{
-        
-	}
+
+
+$host="localhost";
+$username="root";
+$password="";
+$dbname="webmit";
+
+$con=mysqli_connect($host,$username,$password,$dbname,3307);
+
+
+if(!$con){
+	
+	die('Could not connect mysql sever:'.mysql_error());
+}
 ?>
