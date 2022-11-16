@@ -15,8 +15,8 @@
   <li><a href="#news">Goods</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
-  <li><a href="#about">Log-in</a></li>
-  <li><a href="#about">Sign-up</a></li>
+  <li><a href="#login">Log-in</a></li>
+  <li><a href="#signup">Sign-up</a></li>
 	</ul><hr>
 
 	<img src="Images/yasiru logo.jpg" style="width: 200px;height: 100px;"><br><br>
