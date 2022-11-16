@@ -105,7 +105,7 @@ if(isset($_SESSION["cart_item"])){
 }
 ?>
 </div>
-<a href="catch.php">
+<a href="pay.php">
    <button>pay</button>
 </a>
 <div id="product-grid">

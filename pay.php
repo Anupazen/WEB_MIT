@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+session_start();
+$var_value = $_SESSION['total'];
+$var_1 =  "Rs ";
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

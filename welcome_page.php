@@ -19,24 +19,26 @@
   <li><a href="#about">Sign-up</a></li>
 	</ul><hr>
 
-	<img src="Images/yasiru logo.jpg" style="width: 200px;height: 100px;">
+	<img src="Images/yasiru logo.jpg" style="width: 200px;height: 100px;"><br><br>
 
-  <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="Images/img_nature_wide.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
+<div class="mySlides fade">
+  <img src="Images/wc 1.png" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="Images/img_snow_wide.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+  <img src="Images/wc 2.png" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="Images/img_mountains_wide.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+  <img src="Images/wc 3.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/wc 4.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/wc 5.png" style="width:100%">
 </div>
 
 </div>
