@@ -86,7 +86,7 @@ else{
                 <h2>View Available Stock</h2>
             </div>
                 <div class='cl3'>
-                    <form action=''>
+                    <form action='view stock.html'>
                         <fieldset class='p_Details'>
                                 <table>
                                     <tr>
@@ -152,14 +152,7 @@ else{
                                         
                                     </tr>
                                 </table>
-                                <div class='back'><button id='button_back' style='margin-left:90%' onclick='backtoViewstock()'>Back</button>
-                                    <script>
-                                        function backtoViewstock(){
-                                            window.location = 'view stock.html';
-                                            
-                                        
-                                        }
-                                        </script>
+                                <div class='back'><button id='button_back' style='margin-left:90%' href='view stock.html'>Back</button>
                                 </div>
                         </fieldset>
                     </form>

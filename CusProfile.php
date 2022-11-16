@@ -35,8 +35,12 @@ while($row=$res->fetch_assoc())
 			<label id="cus">Address: </label>
 			<input type="text" name="add" id="add" value=<?php echo $row["address"]; ?> reqired><br><br>
 			<button type="submit">Update</button><br><br>
-			<button type="delete">Delete</button>
+			
 		</form></center>
+
+		<form action="DeleteProfval.php" method="POST" id="cuspro">
+			<button type="submit">Delete</button>
+		</form>
 <?php } ?>
 	</body>
 </html>
