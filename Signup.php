@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <script type="text/javascript">
+      
+      function ValidateEmail(inputText){
+      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+          if(inputText.value.match(mailformat)){
+          document.form1.text1.focus();
+          return true;
+        }else
+      {
+      alert("You have entered an invalid email address!");
+      document.form1.text1.focus();
+      return false;
+      }
+      }
+
+
+
+    </script>
+
+
+
+
+
+
+
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box}
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=text], input[type=password]{
   width: 100%;
   padding: 15px;
   margin: 5px 20 22px 20;
@@ -54,7 +88,10 @@ button:hover {
 
 /* Add padding to container elements */
 .container {
-  padding: 200px;
+  padding-top: 10px;
+  padding-left: 150px;
+  padding-right: 150px;
+
 }
 
 /* Clear floats */
@@ -71,9 +108,12 @@ button:hover {
   }
 }
 </style>
+</head>
+
+
 <body>
 
-<form action="/action_page.php" style="border:1px solid #ccc">
+<form action="/action_page.php" style="border:1px solid #ccc" name="signup">
   <div class="container">
     <h1 align="center">Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
@@ -81,6 +121,15 @@ button:hover {
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter your name" name="name" required>
+
+    <label for="age"><b>Age</b></label>
+    <input type="text" placeholder="Enter your age" name="age" required>
+
+    <label for="adress"><b>Address</b></label>
+    <input type="text" placeholder="Enter your home adress" name="adress" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
@@ -95,8 +144,11 @@ button:hover {
     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
     <div class="clearfix">
-      <button align="center" type="button" class="cancelbtn" >Cancel</button>
-      <button align="center" type="submit" class="signupbtn">Sign Up</button>
+      <a href="login.php"> <button align="center" type="button" class="cancelbtn" onclick="" >Log in</button> </a>
+      <button align="center" type="submit" class="signupbtn" onclick="ValidateEmail(document.signup.email)">Sign Up</button>
+
+
+
     </div>
   </div>
 </form>
