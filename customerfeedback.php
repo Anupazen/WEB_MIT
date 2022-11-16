@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   </head>
   <body>
+
+<?php
+
+$host="localhost";
+$user="root";
+$pass="";
+$db="webmit";
+
+$con = new mysqli($host,$user,$pass,$db);
+
+if(!$con)
+{
+echo "There are some problem while connecting the database";
+}
+
+
+?>
+
     <div class="container">
       <div class="post">
         <div class="text">Thanks for rating us!</div>
@@ -26,7 +44,7 @@
         <form action="#">
           <header></header>
           <div class="textarea">
-            <textarea cols="30" placeholder="Describe your experience.."></textarea>
+            <textarea name="REVIEW" cols="30" placeholder="Describe your experience.."></textarea>
           </div>
           <div class="btn">
             <button type="submit">Post</button>
@@ -40,6 +58,36 @@
       const widget = document.querySelector(".star-widget");
       const editBtn = document.querySelector(".edit");
       btn.onclick = ()=>{
+
+  
+
+      <?php
+
+      $customer_id = $_POST["cid"];
+$review = $_POST["REVIEW"];
+
+
+$qry = "INSERT INTO customer_feedback
+VALUES ('$customer_id','','$review')";
+
+$insert = $con->query($qry);
+
+if(!$insert)
+{
+echo "There are some problems while inserting data";
+}
+
+else
+{
+alert("Update Successfull.");
+window.location = "pay.php";
+}
+
+
+?>
+
+
+
         widget.style.display = "none";
         post.style.display = "block";
         editBtn.onclick = ()=>{
