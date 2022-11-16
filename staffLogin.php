@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 include"DB.php";
 if(isset($_POST['uname'])&& isset($_POST['password'])){
 
@@ -28,9 +28,9 @@ exit();
 $sql="SELECT* FROM employee WHERE username='$uname' AND password='$pass'";
 $result=mysqli_query($con,$sql);
 
-if(mysqli_num_rows($result)==1){
+if(mysqli_num_rows($result)===1){
 $row=mysqli_fetch_assoc($result);
-if($row['username']==$uname && $row['password']==$pass){
+if($row['username']===$uname && $row['password']===$pass){
     $_SESSION['username']=$row['username'];
     $_SESSION['id']=$row['id'];
 
