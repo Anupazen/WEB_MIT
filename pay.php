@@ -18,7 +18,7 @@ $var_1 =  "Rs ";
 
 <div class="container">
 
-    <form method="POST" action="Products.php">
+    <form action="paydb.php" method="POST">
 
         <div class="row">
 
@@ -26,32 +26,32 @@ $var_1 =  "Rs ";
 
                 <div class="inputBox">
                     <span>Cutomer_ID :</span>
-                    <input type="text" id="costomerID" readonly>
+                    <input type="text" id="costomerID" name="cid" readonly>
                 </div>
 
                 <h3 class="title">billing address</h3>
 
                 <div class="inputBox">
                     <span >full name :</span>
-                    <input id="name" type="text" placeholder="john deo">
+                    <input id="name" type="text"  name="name">
                 </div>
                 <div class="inputBox">
                     <span >email :</span>
-                    <input id="mail" type="email" placeholder="example@example.com">
+                    <input id="mail" type="email" placeholder="example@example.com" name="mail">
                 </div>
                 <div class="inputBox">
                     <span >address :</span>
-                    <input id="address" type="text" placeholder="room - street - locality">
+                    <input id="address" type="text"  name="address">
                 </div>
                 <div class="inputBox">
                     <span >city :</span>
-                    <input id="city" type="text" placeholder="mumbai">
+                    <input id="city" type="text" name="city">
                 </div>
                
                 <div class="flex">
                     <div class="inputBox">
                         <span >Telephone Number :</span>
-                        <input id="number" type="number" placeholder="07x xxxxxxx">
+                        <input id="number" type="number" placeholder="07x xxxxxxx" name="tnumber">
                     </div>
     
 
@@ -63,7 +63,7 @@ $var_1 =  "Rs ";
 
                 <div class="inputBox">
                     <span>Total_Amount:</span>
-                    <input type="text" id="TA" value=<?php echo $var_value; ?> readonly>
+                    <input type="text" id="TA" name="ta" readonly>
                 </div>
 
                 <h3 class="title">payment</h3>
