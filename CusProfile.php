@@ -1,5 +1,7 @@
 <?php 
-	require 'DBN.php'
+	require 'DBN.php';
+	session_start();
+	$usname = $_SESSION['usname'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,7 +11,7 @@
 	</head>
 	<body>
 <?php
-	$sql = "SELECT * from user WHERE UID='1'";
+	$sql = "SELECT * from user WHERE UID='$usname'";
 				$res = $con->query($sql);
 ?>
 

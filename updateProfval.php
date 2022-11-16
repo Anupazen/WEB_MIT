@@ -12,5 +12,5 @@
       ?>
                      <script type="text/javascript">
             alert("Update Successfull.");
-            window.location = "pay.php";
+            window.location = "Products.php";
         </script>

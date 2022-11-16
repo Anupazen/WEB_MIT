@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <?php
 session_start();
-$var_value = $_SESSION['total'];
+$total = $_SESSION['total'];
+$usname = $_SESSION['usname'];
 $var_1 =  "Rs ";
 ?>
 <html lang="en">
@@ -26,7 +27,7 @@ $var_1 =  "Rs ";
 
                 <div class="inputBox">
                     <span>Cutomer_ID :</span>
-                    <input type="text" id="costomerID" name="cid" readonly>
+                    <input type="text" id="costomerID" name="cid" value=<?php echo $usname ?> readonly>
                 </div>
 
                 <h3 class="title">billing address</h3>
@@ -37,7 +38,7 @@ $var_1 =  "Rs ";
                 </div>
                 <div class="inputBox">
                     <span >email :</span>
-                    <input id="mail" type="email" placeholder="example@example.com" name="mail">
+                    <input id="mail" type="email" placeholder="example@example.com" name="mail" required>
                 </div>
                 <div class="inputBox">
                     <span >address :</span>
@@ -63,7 +64,7 @@ $var_1 =  "Rs ";
 
                 <div class="inputBox">
                     <span>Total_Amount:</span>
-                    <input type="text" id="TA" name="ta" readonly>
+                    <input type="text" id="TA" name="ta" value=<?php echo $total ?> readonly>
                 </div>
 
                 <h3 class="title">payment</h3>

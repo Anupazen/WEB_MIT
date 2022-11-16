@@ -38,7 +38,7 @@ input[type=submit]:hover{
         <br><br><br><br><br><br><br>
 
         
-<form class="form1" action='stock.php' class="form1">
+<form class="form1" action='search.php' class="form1">
             <input style="background: green; color: #fff;" type="submit" value="Stock Review">
         </form>
         

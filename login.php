@@ -89,7 +89,7 @@ span.psw {
 
 
 
-<form action="/action_page.php" method="post">
+<form action="loginVal.php" method="post">
   <div class="imgcontainer">
    
   </div>

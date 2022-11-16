@@ -26,12 +26,12 @@ $insert = $con->query($qry);
 
 if(!$insert)
     {
-        echo "There are some problems while inserting data";
+        alert('Oops! something went wrong');
     }
 
     else
     {
-        echo "data inserted";
+        header("Location:Products.php");
     }
 
 

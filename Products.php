@@ -1,5 +1,6 @@
 <?php
 session_start();
+$usname = $_SESSION['usname'];
 require_once("dbcontroller.php");
 $db_handle = new DBController();
 if(!empty($_GET["action"])) {
@@ -45,12 +46,25 @@ switch($_GET["action"]) {
 ?>
 <HTML>
 <HEAD>
-<TITLE>Simple PHP Shopping Cart</TITLE>
+<TITLE>Cart</TITLE>
 <link href="CSS/style.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="CSS/menubar.css">
+
+<link rel="stylesheet" href="CSS/Products.css">
 </HEAD>
 <BODY>
 <div id="shopping-cart">
-<div class="txt-heading">Shopping Cart</div>
+
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#news">Goods</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="CusProfile.php">Profile</a></li>
+  <li><a href="welcome_page.php">Log-out</a></li>
+	</ul><hr>
+
+	<img src="Images/yasiru logo.jpg" style="width: 200px;height: 100px;"><br><br>
+
 
 <a id="btnEmpty" href="Products.php?action=empty">Empty Cart</a>
 <?php
@@ -106,8 +120,9 @@ if(isset($_SESSION["cart_item"])){
 ?>
 </div>
 <a href="pay.php">
-   <button>pay</button>
+   <button id="pay" >pay</button>
 </a>
+<br>
 <div id="product-grid">
 	<div class="txt-heading">Products</div>
 	<?php
