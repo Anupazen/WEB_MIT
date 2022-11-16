@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+session_start();
+$var_value = $_SESSION['total'];
+$var_1 =  "Rs ";
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +18,7 @@
 
 <div class="container">
 
-    <form action="">
+    <form method="POST" action="Products.php">
 
         <div class="row">
 
@@ -58,7 +63,7 @@
 
                 <div class="inputBox">
                     <span>Total_Amount:</span>
-                    <input type="text" id="TA" readonly>
+                    <input type="text" id="TA" value=<?php echo $var_value; ?> readonly>
                 </div>
 
                 <h3 class="title">payment</h3>
