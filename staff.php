@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
  <head>
-<title>LOGIN</title>
+<title>staff</title>
  <link rel="stylesheet" type="text/css" href="style.css">
  
  </head>
