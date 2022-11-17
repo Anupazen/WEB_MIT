@@ -56,7 +56,7 @@ switch($_GET["action"]) {
 <div id="shopping-cart">
 
 <ul>
-  <li><a href="#">Home</a></li>
+  <li><a href="welcome_page.php">Home</a></li>
   <li><a href="tracking.php">Your Orders</a></li>
   <li><a href="customerfeedback.php">Rate</a></li>
   <li><a href="CusProfile.php">Profile</a></li>
