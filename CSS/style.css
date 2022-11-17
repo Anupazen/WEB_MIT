@@ -3,7 +3,11 @@ body {
 	color: #211a1a;
 	font-size: 0.9em;
 }
-
+body{
+    background-image: url('Snacks-side_view.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 #shopping-cart {
 	margin: 40px;
 }
