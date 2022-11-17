@@ -41,7 +41,7 @@ echo "There are some problem while connecting the database";
         <label for="rate-2" class="fas fa-star"></label>
         <input type="radio" name="rate" id="rate-1">
         <label for="rate-1" class="fas fa-star"></label>
-        <form action="#">
+        <form action="feedbackval.php" method="post">
           <header></header>
           <div class="textarea">
             <textarea name="REVIEW" cols="30" placeholder="Describe your experience.."></textarea>
@@ -52,50 +52,5 @@ echo "There are some problem while connecting the database";
         </form>
       </div>
     </div>
-    <script>
-      const btn = document.querySelector("button");
-      const post = document.querySelector(".post");
-      const widget = document.querySelector(".star-widget");
-      const editBtn = document.querySelector(".edit");
-      btn.onclick = ()=>{
-
-  
-
-      <?php
-
-      $customer_id = $_POST["cid"];
-$review = $_POST["REVIEW"];
-
-
-$qry = "INSERT INTO customer_feedback
-VALUES ('$customer_id','','$review')";
-
-$insert = $con->query($qry);
-
-if(!$insert)
-{
-echo "There are some problems while inserting data";
-}
-
-else
-{
-alert("Update Successfull.");
-window.location = "pay.php";
-}
-
-
-?>
-
-
-
-        widget.style.display = "none";
-        post.style.display = "block";
-        editBtn.onclick = ()=>{
-          widget.style.display = "block";
-          post.style.display = "none";
-        }
-        return false;
-      }
-    </script>
   </body>
 </html>
