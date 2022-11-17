@@ -11,7 +11,6 @@
 	
 	if($con->query($sql))
 	{
-        alart("Success!!")
 		header ("Location:login.php");
 		
 	}
