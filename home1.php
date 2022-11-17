@@ -23,9 +23,8 @@ input[type=submit]:hover{
 
     </style>
 <title>Home</title>
- <link rel="stylesheet" type="text/css" href="style1.css">
+ <link rel="stylesheet" type="text/css" href="style.css">
  
-
  </head>
  <style >
    
@@ -33,19 +32,15 @@ input[type=submit]:hover{
 </style>
  <body>
    
-   <h1>Welcome,<?php echo $_SESSION['username'];?>!!<h1>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>Welcome,<?php echo $_SESSION['username'];?>!!<h1>
         
         <br><br><br><br><br><br><br>
 
-        <centre>
-<form class="form1" action='view stock.html' class="form1">
+        
+<form class="form1" action='stock.php' class="form1">
             <input style="background: green; color: #fff;" type="submit" value="Stock Review">
         </form>
-        <br>
-        <form class="form1" action='staffUpdate.php' class="form1">
-            <input style="background: green; color: #fff;" type="submit" value="Update Your Profile">
-        </form>
-        <centre> 
+        
         
 </body>
 </html>

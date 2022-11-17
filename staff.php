@@ -2,12 +2,15 @@
 <html>
  <head>
 <title>staff</title>
- <link rel="stylesheet" type="text/css" href="style.css"> 
- 
+ <link rel="stylesheet" type="text/css" href="style1.css"> 
+ <style>
+body {
+  background-image: url('staff1.png');
+}
+</style>
  </head>
  <body>
-
- 
+  
 <form action="staffLogin.php" method="POST">
   <h2>LOGIN</h2>
   <?php if (isset($_GET['error'])){?>
