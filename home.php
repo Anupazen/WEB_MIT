@@ -42,9 +42,9 @@ input[type=submit]:hover{
             <input style="background: green; color: #fff;" type="submit" value="Stock Review">
         </form>
         <br>
-        <form class="form1" action='staffUpdate.php' class="form1">
+        <!-- <form class="form1" action='staffUpdate.php' class="form1">
             <input style="background: green; color: #fff;" type="submit" value="Update Your Profile">
-        </form>
+        </form> -->
         <centre> 
         
 </body>

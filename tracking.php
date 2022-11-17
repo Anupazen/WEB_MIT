@@ -5,47 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/trackingStyle.css">
+    <link rel="stylesheet" href="CSS/trackingstyle.css">
+
 </head>
-<body>
+<body style="margin: 50px;">
+    <h1>Your Orders</h1>
+    <br>
     <div class="container">
-        <h2>Tracking Info</h2> 
 
-        <div class="tracker">
-            <ul class="step-wizard-list">
-                <li class="step-wizard-item">
-                    <span class="progress-count">1</span>
-                    <span class="progress-label">Ordered</span>
-                </li>
-                <li class="step-wizard-item current-item">
-                    <span class="progress-count">2</span>
-                    <span class="progress-label">Packed the Order</span>
-                </li>
-                <li class="step-wizard-item">
-                    <span class="progress-count">3</span>
-                    <span class="progress-label">Shipped</span>
-                </li>
-                <li class="step-wizard-item">
-                    <span class="progress-count">4</span>
-                    <span class="progress-label">Order Completed</span>
-                </li>
-            </ul>
-        </div>
+    <table class="table1">
+        <thead>
+			<tr>
+				<th>Order ID</th>
+				<th>Order Status</th>
+                <th>Ordered Products</th>
+			</tr>
+		</thead>
 
-        <div class="container2">
-            <div class="delcont">
-            
-                <div class="delinfo">
-                    <h5>Delivery Adress</h5>
-                </div>
-            </div>
-            <div class="paycont">
-            
-                <div class="payinfo">
-                    <h5>Payment Info</h5>
-                </div>
-            </div>
-        </div>
+        <tbody>
+            <?php
+            session_start();
+            $usname = $_SESSION['usname'];
+
+            $servername = "localhost";
+			$username = "root";
+			$password = "";
+			$database = "webmit";
+
+			// Create connection
+			$connection = new mysqli($servername, $username, $password, $database);
+
+            // Check connection
+			if ($connection->connect_error) {
+				die("Connection failed: " . $connection->connect_error);
+			}
+
+            // read all row from database table
+			$sql = "SELECT * FROM orders WHERE U_ID='$usname'";
+			$result = $connection->query($sql);
+
+            if (!$result) {
+				die("Invalid query: " . $connection->error);
+			}
+
+            // read data of each row
+			while($row = $result->fetch_assoc()) {
+                echo "<tr>
+                    <td>" . $row["orderid"] . "</td>
+                    <td>" . $row["del_status"] . "</td>
+                    <td>" . $row["products"] . "</td>
+                    
+                </tr>";
+            }
+
+            $connection->close();
+            ?>
+        </tbody>
+    </table>
 
 
     </div>

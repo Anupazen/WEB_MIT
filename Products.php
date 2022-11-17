@@ -57,7 +57,7 @@ switch($_GET["action"]) {
 
 <ul>
   <li><a href="#">Home</a></li>
-  <li><a href="#news">Goods</a></li>
+  <li><a href="tracking.php">Your Orders</a></li>
   <li><a href="customerfeedback.php">Rate</a></li>
   <li><a href="CusProfile.php">Profile</a></li>
   <li><a href="welcome_page.php">Log-out</a></li>
