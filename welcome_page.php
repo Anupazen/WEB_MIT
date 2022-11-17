@@ -100,8 +100,8 @@ switch($_GET["action"]) {
 </div>
 
 <div>
-  <h2 style="color:green; text-align: center; font-size: 50px; background-color: #ffcccc;">Trending This week</h2><br><br>
-  <a href="signup.php"><img src="Images/wcgoods.png" alt="HTML tutorial"></a>
+  <h2 style="color:green; text-align: center; font-size: 50px; background-color: ;">Trending This week</h2><br><br>
+  <center><a href="signup.php"><img src="Images/wcgoods.png" alt="goods"></a></center>
 </div>
 
 <!-- FOOTER -->

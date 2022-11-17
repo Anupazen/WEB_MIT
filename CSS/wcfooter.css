@@ -18,7 +18,7 @@ html,body {
   width: 100%;
   position: relative;
   height: auto;
-  background-color: #070617;
+  background-color: #ff6666;
 }
 .footer .col {
   width: 190px;
@@ -36,7 +36,7 @@ html,body {
   font-size: 12px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
-  color: rgba(255,255,255,0.2);
+  color: #000000;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.250em;
@@ -47,7 +47,7 @@ html,body {
   padding: 0;
 }
 .footer .col ul li {
-  color: #999999;
+  color: #ffffff;
   font-size: 14px;
   font-family: inherit;
   font-weight: bold;
