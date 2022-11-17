@@ -107,19 +107,19 @@ switch($_GET["action"]) {
 <!-- FOOTER -->
 <div class="dummy_page">
   
-</div>
+</div><center>
 <!-- FOOTER START -->
 <div class="footer">
   <div class="contain"><br>
     <img src="Images/yasiru logo.jpg" style="width: 200px;height: 100px;">
-    <h1>0114 442 608</h1><br>
+    <h1>0114 442 608</h1>
     <h2>144/1 Katuwana Rd, Homagama</h2>
   <div class="col">
     <h1>Useful Links</h1>
     <ul>
       <li><a href="https://www.google.com/maps/place/Yasiru+Traders/@6.8322982,80.0037234,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae251f6a92b2dfb:0x2c48005d609d2d0a!8m2!3d6.8322963!4d80.0037467">Store Location</a></li>
-      <li>Privacy Policy</li>
-      <li>Terms & Conditions</li>
+      <li><a href="https://www.google.com/maps/place/Yasiru+Traders/@6.8322982,80.0037234,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae251f6a92b2dfb:0x2c48005d609d2d0a!8m2!3d6.8322963!4d80.0037467">Privacy Policy</a></li>
+      <li><a href="https://www.google.com/maps/place/Yasiru+Traders/@6.8322982,80.0037234,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae251f6a92b2dfb:0x2c48005d609d2d0a!8m2!3d6.8322963!4d80.0037467">Terms & Conditions</a></li>
       
     </ul>
   </div>
@@ -133,7 +133,7 @@ switch($_GET["action"]) {
   </div>
 <div class="clearfix"></div>
 </div>
-</div>
+</div></center>
 <!-- END OF FOOTER -->
 
 <script>
