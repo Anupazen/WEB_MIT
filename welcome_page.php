@@ -58,7 +58,6 @@ switch($_GET["action"]) {
 <body>
 	<ul>
   <li><a href="#home">Home</a></li>
-  <li><a href="#news">Goods</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
   <li><a href="login.php">Log-in</a></li>
@@ -98,68 +97,36 @@ switch($_GET["action"]) {
   <span class="dot"></span>
 </div>
 
+<div>
+  <h2 style="color:green; text-align: center; font-size: 50px; background-color: #ffcccc;">Trending This week</h2><br><br>
+  <a href="signup.php"><img src="Images/wcgoods.png" alt="HTML tutorial"></a>
+</div>
+
 <!-- FOOTER -->
 <div class="dummy_page">
   
 </div>
 <!-- FOOTER START -->
 <div class="footer">
-  <div class="contain">
+  <div class="contain"><br>
+    <img src="Images/yasiru logo.jpg" style="width: 200px;height: 100px;">
+    <h1>0114 442 608</h1><br>
+    <h2>144/1 Katuwana Rd, Homagama</h2>
   <div class="col">
-    <h1>Company</h1>
+    <h1>Useful Links</h1>
     <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-  <div class="col">
-    <h1>Products</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-  <div class="col">
-    <h1>Accounts</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-  <div class="col">
-    <h1>Resources</h1>
-    <ul>
-      <li>Webmail</li>
-      <li>Redeem code</li>
-      <li>WHOIS lookup</li>
-      <li>Site map</li>
-      <li>Web templates</li>
-      <li>Email templates</li>
-    </ul>
-  </div>
-  <div class="col">
-    <h1>Support</h1>
-    <ul>
-      <li>Contact us</li>
-      <li>Web chat</li>
-      <li>Open ticket</li>
+      <li><a href="https://www.google.com/maps/place/Yasiru+Traders/@6.8322982,80.0037234,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae251f6a92b2dfb:0x2c48005d609d2d0a!8m2!3d6.8322963!4d80.0037467">Store Location</a></li>
+      <li>Privacy Policy</li>
+      <li>Terms & Conditions</li>
+      
     </ul>
   </div>
   <div class="col social">
-    <h1>Social</h1>
+    <h1>Contact Us</h1>
     <ul>
-      <li><img src="Images/fb.png" width="32" style="width: 32px;"></li>
-      <li><img src="Images/insta.jpeg" width="32" style="width: 32px;"></li>
-      <li><img src="Images/gmail.png" width="32" style="width: 32px;"></li>
+      <li><a href="https://www.facebook.com/"><img src="Images/fb.png" width="32" style="width: 32px;"></a></li>
+      <li><a href="https://yasirutraders.business.site/"><img src="Images/web.png" width="32" style="width: 32px;"></a></li>
+      <li><a href="mailto:info@yasirutraders.com"><img src="Images/gmail.png" width="32" style="width: 32px;"></a></li>
     </ul>
   </div>
 <div class="clearfix"></div>
